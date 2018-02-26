@@ -141,7 +141,8 @@ var Dropdown = function (_Component) {
 
       var _props = this.props,
           options = _props.options,
-          baseClassName = _props.baseClassName;
+          baseClassName = _props.baseClassName,
+          groupClassName = _props.groupClassName;
 
       var ops = options.map(function (option) {
         if (option.type === 'group') {
@@ -156,7 +157,7 @@ var Dropdown = function (_Component) {
 
           return _react2.default.createElement(
             'div',
-            { className: baseClassName + '-group', key: option.name },
+            { className: baseClassName + '-group ' + groupClassName, key: option.name },
             groupTitle,
             _options
           );
@@ -198,8 +199,8 @@ var Dropdown = function (_Component) {
       var placeHolderValue = typeof this.state.selected === 'string' ? this.state.selected : this.state.selected.label;
 
       var dropdownClass = (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, baseClassName + '-root', true), _defineProperty(_classNames, className, !!className), _defineProperty(_classNames, 'is-open', this.state.isOpen), _classNames));
-      var placeholderClass = (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, baseClassName + '-placeholder', true), _defineProperty(_classNames2, '' + placeholderClassName, !!placeholderClassName), _classNames2));
-      var menuClass = (0, _classnames2.default)((_classNames3 = {}, _defineProperty(_classNames3, baseClassName + '-menu', true), _defineProperty(_classNames3, '' + menuClassName, !!menuClassName), _classNames3));
+      var placeholderClass = (0, _classnames2.default)((_classNames2 = {}, _defineProperty(_classNames2, baseClassName + '-placeholder', true), _defineProperty(_classNames2, placeholderClassName, !!placeholderClassName), _classNames2));
+      var menuClass = (0, _classnames2.default)((_classNames3 = {}, _defineProperty(_classNames3, baseClassName + '-menu', true), _defineProperty(_classNames3, menuClassName, !!menuClassName), _classNames3));
 
       var value = _react2.default.createElement(
         'div',

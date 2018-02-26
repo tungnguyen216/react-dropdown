@@ -105,7 +105,7 @@ class Dropdown extends Component {
         let _options = option.items.map((item) => this.renderOption(item))
 
         return (
-          <div className={`${baseClassName}-group`} key={option.name}>
+          <div className={`${baseClassName}-group ${option.groupClassName ? option.groupClassName : ''}`} key={option.name}>
             {groupTitle}
             {_options}
           </div>
