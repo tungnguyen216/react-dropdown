@@ -141,8 +141,7 @@ var Dropdown = function (_Component) {
 
       var _props = this.props,
           options = _props.options,
-          baseClassName = _props.baseClassName,
-          groupClassName = _props.groupClassName;
+          baseClassName = _props.baseClassName;
 
       var ops = options.map(function (option) {
         if (option.type === 'group') {
@@ -157,7 +156,7 @@ var Dropdown = function (_Component) {
 
           return _react2.default.createElement(
             'div',
-            { className: baseClassName + '-group ' + groupClassName, key: option.name },
+            { className: baseClassName + '-group ' + (option.groupClassName ? option.groupClassName : ''), key: option.name },
             groupTitle,
             _options
           );
