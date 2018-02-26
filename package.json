@@ -1,12 +1,12 @@
 {
-  "name": "react-dropdown",
+  "name": "react-specific-dropdown",
   "version": "1.4.0",
   "description": "React dropdown component",
   "main": "dist/index.js",
   "style": "style.css",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fraserxu/react-dropdown.git"
+    "url": "git@github.com:tungnguyen216/react-specific-dropdown.git"
   },
   "files": [
     "dist/index.js",
@@ -21,15 +21,11 @@
     "select"
   ],
   "author": {
-    "name": "Fraser Xu",
-    "email": "xvfeng123@gmail.com",
-    "url": "https://fraserxu.me"
+    "name": "Tung Nguyen",
+    "email": "tungnguyen.mr@gmail.com"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fraserxu/react-dropdown/issues"
-  },
-  "homepage": "https://github.com/fraserxu/react-dropdown",
+  "homepage": "https://github.com/tungnguyen216/react-specific-dropdown",
   "dependencies": {
     "classnames": "^2.2.3"
   },

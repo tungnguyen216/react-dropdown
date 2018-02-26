@@ -16,7 +16,7 @@ Demo is available [here](http://fraserxu.me/react-dropdown/)
 ### Installation
 
 ```
-$ npm install react-dropdown  --save
+$ npm install react-specific-dropdown  --save
 ```
 
 ### Changelog
